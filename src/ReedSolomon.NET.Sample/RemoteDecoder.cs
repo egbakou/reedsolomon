@@ -15,7 +15,7 @@ public static class RemoteDecoder
 
    public static void EntryPoint(string[] args)
     {
-        const string filePath = "D:/docker-volumes/uploads/1GB.bin";
+        const string filePath = "path_where_original_file_will_be_reconstructed/1GB.bin";
         var remoteFilePaths = new[]
         {
             "https://download1490.mediafire.com/hxz9tskcvfvg/xrxfst8lr2xypx5/1GB.bin.0",
@@ -31,29 +31,23 @@ public static class RemoteDecoder
             ParallelDownload = true // download parts of file as parallel or not. Default value is false
         };
 
-
-        /*downloader.DownloadFileTaskAsync(remoteFilePaths[0], $"{filePath}" + ".0").GetAwaiter().GetResult();
-        downloader.ChunkDownloadProgressChanged += (sender, e) =>
-        {
-            Console.WriteLine($"{e.ProgressId}/{e.ProgressPercentage} {e.TotalBytesToReceive}%");
-        };*/
         var startTime = DateTime.Now;
         Console.WriteLine("Start time: " + DateTime.Now);
         Parallel.ForEach(remoteFilePaths, (remoteFilePath) =>
         {
             var downloader = new DownloadService(downloadOpt);
             var fileName = remoteFilePath[(remoteFilePath.LastIndexOf('/') + 1)..];
-            downloader.DownloadFileTaskAsync(remoteFilePath, $"D:/docker-volumes/uploads/{fileName}")
+            downloader.DownloadFileTaskAsync(remoteFilePath, $"location_to_store_chunks_file/{fileName}")
                 .GetAwaiter().GetResult();
         });
         var endTime = DateTime.Now;
         var duration = (endTime - startTime).TotalSeconds;
         Console.WriteLine("Download duration: {0}", duration);
 
-        // count the number of file that name end by .0 .1 .2 .3  in the directory /uploads
-        // var shardsList = Directory.GetFiles(@"D:/docker-volumes/uploads/", "1GB.bin.*");
+        // count the number of file that name end by .0 .1 .2 .3
+        // var shardsList = Directory.GetFiles(@"location_to_store_chunks_file/", "1GB.bin.*");
         // Exclude the file that name end by .bin
-        var shardsList = Directory.GetFiles(@"D:/docker-volumes/uploads/", "1GB.bin.*")
+        var shardsList = Directory.GetFiles(@"location_to_store_chunks_file/", "1GB.bin.*")
             .Where(file => !file.EndsWith(".bin")).ToList();
         var shardsCount = shardsList.Count;
         var shardPresent = new bool[TotalShards];

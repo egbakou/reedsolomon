@@ -11,16 +11,16 @@ public static class SampleDecoder
     private const int TotalShards = 6;
     private const int BytesInInt = 4;
 
-    // Rename this method to Main to run the sample.
+    // Rename this method to Main before running the sample.
     public static void EntryPoint(string[] args)
     {
-        const string filePath = "D:/docker-volumes/uploads/contract.pptx";
+        const string filePath = "path_where_original_file_will_be_reconstructed/data.extension";
 
-        // count the number of file that name end by .0 .1 .2 .3 .4 .5 .6 .7 .8 .9 in the directory /uploads
-        // var shardsList = Directory.GetFiles(@"D:/docker-volumes/uploads/", "contract.pptx.*");
-        // Exclude the file that name end by .pptx
-        var shardsList = Directory.GetFiles(@"D:/docker-volumes/uploads/", "contract.pptx.*")
-            .Where(file => !file.EndsWith(".pptx")).ToList();
+        // count the number of file that name end by .0 .1 .2 .3 .4 .5 .6 .7 .8 .9
+        // var shardsList = Directory.GetFiles(@"path_to_directory/", "data.bin.*");
+        // Exclude the file that name end by .bin
+        var shardsList = Directory.GetFiles(@"path_to_directory/", "data.extension.*")
+            .Where(file => !file.EndsWith(".extension")).ToList();
         var shardsCount = shardsList.Count;
         var shardPresent = new bool[TotalShards];
 

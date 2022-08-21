@@ -13,7 +13,7 @@ public static class SampleEncoder
 
     public static void Main(string[] args)
     {
-        const string filePath = "D:/docker-volumes/uploads/data.bin";
+        const string filePath = "filePath/data.extension";
         Console.WriteLine("Byte array max");
         // get file size
         var fileSize = new FileInfo(filePath).Length;

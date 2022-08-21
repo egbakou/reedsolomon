@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <PackageId>ReedSolomon.NET</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Laurent Egbakou</Authors>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageTags>reedsolomon,erasure,coding,shard,parity,storage</PackageTags>
+    <Description>Reed-Solomon Erasure Coding in C#/.NET</Description>
+    <PackageProjectUrl>https://github.com/egbakou/reedsolomon</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <licenses>MIT</licenses>
+    <RepositoryUrl>https://github.com/egbakou/reedsolomon</RepositoryUrl>
+    <PackageReleaseNotes>See: https://github.com/egbakou/reedsolomon </PackageReleaseNotes>
+    <Copyright>Copyright 2022</Copyright>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <DocumentationFile>bin\Release\ReedSolomon.NET.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\assets\logo.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+</Project>

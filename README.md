@@ -1,4 +1,6 @@
 # <img src="./assets/logo.png" alt="Icon" width="60" />ReedSolomon.NET 
+[![CI](https://github.com/egbakou/reedsolomon/actions/workflows/ci.yml/badge.svg)](https://github.com/egbakou/reedsolomon/actions/workflows/ci.yml) [![NuGet](https://img.shields.io/nuget/v/ReedSolomon.NET.svg?label=NuGet)](https://www.nuget.org/packages/ReedSolomon.NET/)
+
 
 Reed-Solomon Erasure coding implementation in C#/.NET.
 

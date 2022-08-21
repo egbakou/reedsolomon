@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
         
@@ -32,8 +32,3 @@ jobs:
     - name: Run unit tests
       run: dotnet test --configuration Release
       working-directory: ./tests/ReedSolomon.NET.Tests
-      
-    - name: Benchmark
-      run: dotnet run --configuration Release
-      working-directory: ./tests/ReedSolomon.NET.Benchmark
-    

@@ -1,0 +1,478 @@
+preparing...
+
+TEST: ByteInputOutputExpCodingLoop encodeParity
+    warm up...
+        75 passes, 126.4 MB/s
+        75 passes, 125.9 MB/s
+    testing...
+        74 passes, 125.8 MB/s
+        72 passes, 122.3 MB/s
+        75 passes, 126.3 MB/s
+        75 passes, 126.4 MB/s
+        76 passes, 127.7 MB/s
+        75 passes, 127.5 MB/s
+        76 passes, 128.3 MB/s
+        76 passes, 128.6 MB/s
+        76 passes, 128.6 MB/s
+        77 passes, 129.6 MB/s
+
+AVERAGE: 127.1 MB/s
+
+TEST: ByteInputOutputExpCodingLoop isParityCorrect
+    warm up...
+        74 passes, 125.3 MB/s
+        74 passes, 124.2 MB/s
+    testing...
+        142 passes, 240.8 MB/s
+        142 passes, 241.2 MB/s
+        142 passes, 240.6 MB/s
+        142 passes, 241.2 MB/s
+        142 passes, 241.2 MB/s
+        142 passes, 241.4 MB/s
+        142 passes, 240.7 MB/s
+        141 passes, 239.5 MB/s
+        142 passes, 240.1 MB/s
+        142 passes, 240.2 MB/s
+
+AVERAGE: 240.7 MB/s
+
+TEST: ByteInputOutputTableCodingLoop encodeParity
+    warm up...
+        86 passes, 145.1 MB/s
+        85 passes, 144.4 MB/s
+    testing...
+        86 passes, 145.4 MB/s
+        86 passes, 144.8 MB/s
+        86 passes, 144.9 MB/s
+        86 passes, 145.3 MB/s
+        86 passes, 145.0 MB/s
+        86 passes, 145.2 MB/s
+        87 passes, 146.4 MB/s
+        86 passes, 146.2 MB/s
+        86 passes, 145.8 MB/s
+        86 passes, 145.7 MB/s
+
+AVERAGE: 145.5 MB/s
+
+TEST: ByteInputOutputTableCodingLoop isParityCorrect
+    warm up...
+        86 passes, 145.1 MB/s
+        86 passes, 144.8 MB/s
+    testing...
+        142 passes, 240.8 MB/s
+        142 passes, 240.7 MB/s
+        142 passes, 240.3 MB/s
+        142 passes, 241.3 MB/s
+        142 passes, 240.2 MB/s
+        142 passes, 239.7 MB/s
+        142 passes, 240.2 MB/s
+        142 passes, 241.3 MB/s
+        142 passes, 239.8 MB/s
+        141 passes, 239.6 MB/s
+
+AVERAGE: 240.4 MB/s
+
+TEST: ByteOutputInputExpCodingLoop encodeParity
+    warm up...
+        133 passes, 225.8 MB/s
+        137 passes, 232.6 MB/s
+    testing...
+        136 passes, 230.6 MB/s
+        127 passes, 215.7 MB/s
+        136 passes, 230.2 MB/s
+        140 passes, 236.5 MB/s
+        141 passes, 239.6 MB/s
+        141 passes, 239.3 MB/s
+        141 passes, 238.9 MB/s
+        141 passes, 238.7 MB/s
+        138 passes, 233.9 MB/s
+        141 passes, 238.9 MB/s
+
+AVERAGE: 234.2 MB/s
+
+TEST: ByteOutputInputExpCodingLoop isParityCorrect
+    warm up...
+        141 passes, 239.1 MB/s
+        141 passes, 238.6 MB/s
+    testing...
+        135 passes, 229.5 MB/s
+        140 passes, 237.2 MB/s
+        129 passes, 218.8 MB/s
+        131 passes, 221.6 MB/s
+        141 passes, 239.0 MB/s
+        141 passes, 238.9 MB/s
+        141 passes, 239.1 MB/s
+        138 passes, 234.0 MB/s
+        137 passes, 232.9 MB/s
+        136 passes, 230.9 MB/s
+
+AVERAGE: 232.2 MB/s
+
+TEST: ByteOutputInputTableCodingLoop encodeParity
+    warm up...
+        137 passes, 232.8 MB/s
+        131 passes, 221.8 MB/s
+    testing...
+        139 passes, 235.7 MB/s
+        134 passes, 227.3 MB/s
+        140 passes, 236.9 MB/s
+        137 passes, 232.9 MB/s
+        139 passes, 235.0 MB/s
+        138 passes, 233.0 MB/s
+        140 passes, 236.6 MB/s
+        139 passes, 235.4 MB/s
+        140 passes, 236.6 MB/s
+        140 passes, 236.8 MB/s
+
+AVERAGE: 234.6 MB/s
+
+TEST: ByteOutputInputTableCodingLoop isParityCorrect
+    warm up...
+        139 passes, 234.9 MB/s
+        140 passes, 236.5 MB/s
+    testing...
+        140 passes, 237.5 MB/s
+        140 passes, 236.8 MB/s
+        141 passes, 239.7 MB/s
+        141 passes, 239.1 MB/s
+        141 passes, 238.9 MB/s
+        141 passes, 239.3 MB/s
+        142 passes, 240.1 MB/s
+        142 passes, 239.8 MB/s
+        142 passes, 240.3 MB/s
+        142 passes, 240.2 MB/s
+
+AVERAGE: 239.2 MB/s
+
+TEST: InputByteOutputExpCodingLoop encodeParity
+    warm up...
+        80 passes, 134.5 MB/s
+        79 passes, 134.3 MB/s
+    testing...
+        80 passes, 134.9 MB/s
+        79 passes, 134.0 MB/s
+        80 passes, 134.7 MB/s
+        80 passes, 134.6 MB/s
+        79 passes, 134.2 MB/s
+        80 passes, 134.7 MB/s
+        79 passes, 134.0 MB/s
+        79 passes, 134.2 MB/s
+        79 passes, 134.1 MB/s
+        79 passes, 133.6 MB/s
+
+AVERAGE: 134.3 MB/s
+
+TEST: InputByteOutputExpCodingLoop isParityCorrect
+    warm up...
+        79 passes, 133.7 MB/s
+        79 passes, 134.3 MB/s
+    testing...
+        142 passes, 240.0 MB/s
+        142 passes, 240.6 MB/s
+        142 passes, 240.6 MB/s
+        142 passes, 240.9 MB/s
+        142 passes, 240.2 MB/s
+        142 passes, 240.9 MB/s
+        142 passes, 240.6 MB/s
+        141 passes, 239.3 MB/s
+        141 passes, 239.5 MB/s
+        141 passes, 239.3 MB/s
+
+AVERAGE: 240.2 MB/s
+
+TEST: InputByteOutputTableCodingLoop encodeParity
+    warm up...
+        90 passes, 151.8 MB/s
+        90 passes, 153.0 MB/s
+    testing...
+        90 passes, 151.9 MB/s
+        90 passes, 151.9 MB/s
+        89 passes, 151.3 MB/s
+        90 passes, 151.9 MB/s
+        90 passes, 151.6 MB/s
+        90 passes, 152.1 MB/s
+        90 passes, 152.2 MB/s
+        90 passes, 152.5 MB/s
+        90 passes, 152.7 MB/s
+        90 passes, 152.2 MB/s
+
+AVERAGE: 152.0 MB/s
+
+TEST: InputByteOutputTableCodingLoop isParityCorrect
+    warm up...
+        90 passes, 151.8 MB/s
+        90 passes, 152.3 MB/s
+    testing...
+        142 passes, 240.1 MB/s
+        141 passes, 239.6 MB/s
+        142 passes, 240.2 MB/s
+        142 passes, 240.6 MB/s
+        142 passes, 240.1 MB/s
+        142 passes, 240.1 MB/s
+        142 passes, 240.0 MB/s
+        142 passes, 240.8 MB/s
+        142 passes, 240.7 MB/s
+        142 passes, 240.2 MB/s
+
+AVERAGE: 240.2 MB/s
+
+TEST: InputOutputByteExpCodingLoop encodeParity
+    warm up...
+        153 passes, 258.8 MB/s
+        153 passes, 259.3 MB/s
+    testing...
+        153 passes, 258.7 MB/s
+        152 passes, 257.9 MB/s
+        152 passes, 258.3 MB/s
+        152 passes, 258.0 MB/s
+        152 passes, 258.4 MB/s
+        152 passes, 257.8 MB/s
+        153 passes, 258.5 MB/s
+        153 passes, 258.8 MB/s
+        152 passes, 257.9 MB/s
+        153 passes, 258.8 MB/s
+
+AVERAGE: 258.3 MB/s
+
+TEST: InputOutputByteExpCodingLoop isParityCorrect
+    warm up...
+        153 passes, 259.1 MB/s
+        153 passes, 259.2 MB/s
+    testing...
+        142 passes, 239.8 MB/s
+        142 passes, 240.1 MB/s
+        142 passes, 240.3 MB/s
+        142 passes, 240.6 MB/s
+        141 passes, 239.7 MB/s
+        141 passes, 239.6 MB/s
+        141 passes, 239.3 MB/s
+        142 passes, 240.6 MB/s
+        142 passes, 239.8 MB/s
+        142 passes, 240.3 MB/s
+
+AVERAGE: 240.0 MB/s
+
+TEST: InputOutputByteTableCodingLoop encodeParity
+    warm up...
+        179 passes, 303.8 MB/s
+        179 passes, 304.0 MB/s
+    testing...
+        180 passes, 305.2 MB/s
+        180 passes, 304.8 MB/s
+        180 passes, 305.2 MB/s
+        179 passes, 304.0 MB/s
+        178 passes, 302.6 MB/s
+        179 passes, 304.1 MB/s
+        180 passes, 305.2 MB/s
+        181 passes, 306.3 MB/s
+        180 passes, 305.1 MB/s
+        180 passes, 304.9 MB/s
+
+AVERAGE: 304.8 MB/s
+
+TEST: InputOutputByteTableCodingLoop isParityCorrect
+    warm up...
+        180 passes, 304.8 MB/s
+        180 passes, 304.9 MB/s
+    testing...
+        153 passes, 259.2 MB/s
+        153 passes, 258.5 MB/s
+        153 passes, 259.2 MB/s
+        153 passes, 259.2 MB/s
+        153 passes, 259.5 MB/s
+        153 passes, 259.2 MB/s
+        153 passes, 258.5 MB/s
+        153 passes, 258.8 MB/s
+        152 passes, 258.1 MB/s
+        153 passes, 259.2 MB/s
+
+AVERAGE: 258.9 MB/s
+
+TEST: OutputByteInputExpCodingLoop encodeParity
+    warm up...
+        151 passes, 256.3 MB/s
+        150 passes, 253.9 MB/s
+    testing...
+        150 passes, 253.6 MB/s
+        151 passes, 255.2 MB/s
+        150 passes, 254.7 MB/s
+        149 passes, 252.4 MB/s
+        150 passes, 254.7 MB/s
+        150 passes, 254.7 MB/s
+        151 passes, 256.4 MB/s
+        150 passes, 254.9 MB/s
+        150 passes, 254.0 MB/s
+        150 passes, 254.1 MB/s
+
+AVERAGE: 254.5 MB/s
+
+TEST: OutputByteInputExpCodingLoop isParityCorrect
+    warm up...
+        148 passes, 250.7 MB/s
+        149 passes, 252.3 MB/s
+    testing...
+        142 passes, 240.1 MB/s
+        139 passes, 236.3 MB/s
+        138 passes, 233.9 MB/s
+        138 passes, 233.4 MB/s
+        140 passes, 236.7 MB/s
+        141 passes, 238.4 MB/s
+        140 passes, 236.7 MB/s
+        140 passes, 237.3 MB/s
+        139 passes, 234.9 MB/s
+        140 passes, 236.9 MB/s
+
+AVERAGE: 236.5 MB/s
+
+TEST: OutputByteInputTableCodingLoop encodeParity
+    warm up...
+        137 passes, 232.7 MB/s
+        137 passes, 231.7 MB/s
+    testing...
+        139 passes, 235.2 MB/s
+        138 passes, 234.6 MB/s
+        139 passes, 236.3 MB/s
+        139 passes, 235.1 MB/s
+        140 passes, 237.5 MB/s
+        138 passes, 233.8 MB/s
+        138 passes, 233.7 MB/s
+        134 passes, 227.6 MB/s
+        135 passes, 228.6 MB/s
+        132 passes, 223.0 MB/s
+
+AVERAGE: 232.5 MB/s
+
+TEST: OutputByteInputTableCodingLoop isParityCorrect
+    warm up...
+        131 passes, 222.5 MB/s
+        132 passes, 223.3 MB/s
+    testing...
+        141 passes, 238.7 MB/s
+        134 passes, 227.6 MB/s
+        133 passes, 225.4 MB/s
+        137 passes, 231.7 MB/s
+        131 passes, 221.7 MB/s
+        134 passes, 226.4 MB/s
+        132 passes, 222.8 MB/s
+        134 passes, 226.4 MB/s
+        138 passes, 233.4 MB/s
+        141 passes, 238.6 MB/s
+
+AVERAGE: 229.3 MB/s
+
+TEST: OutputInputByteExpCodingLoop encodeParity
+    warm up...
+        143 passes, 242.1 MB/s
+        143 passes, 241.7 MB/s
+    testing...
+        143 passes, 241.8 MB/s
+        143 passes, 241.8 MB/s
+        142 passes, 241.4 MB/s
+        142 passes, 241.3 MB/s
+        142 passes, 241.2 MB/s
+        143 passes, 241.5 MB/s
+        143 passes, 242.0 MB/s
+        142 passes, 241.0 MB/s
+        143 passes, 241.5 MB/s
+        143 passes, 242.5 MB/s
+
+AVERAGE: 241.6 MB/s
+
+TEST: OutputInputByteExpCodingLoop isParityCorrect
+    warm up...
+        143 passes, 242.0 MB/s
+        142 passes, 240.7 MB/s
+    testing...
+        142 passes, 240.3 MB/s
+        140 passes, 237.6 MB/s
+        141 passes, 238.3 MB/s
+        142 passes, 240.7 MB/s
+        142 passes, 239.8 MB/s
+        142 passes, 240.0 MB/s
+        142 passes, 240.2 MB/s
+        142 passes, 240.2 MB/s
+        141 passes, 239.2 MB/s
+        142 passes, 240.0 MB/s
+
+AVERAGE: 239.6 MB/s
+
+TEST: OutputInputByteTableCodingLoop encodeParity
+    warm up...
+        179 passes, 303.1 MB/s
+        175 passes, 297.2 MB/s
+    testing...
+        172 passes, 291.4 MB/s
+        175 passes, 296.5 MB/s
+        174 passes, 295.5 MB/s
+        171 passes, 290.3 MB/s
+        174 passes, 295.4 MB/s
+        175 passes, 296.8 MB/s
+        178 passes, 301.8 MB/s
+        177 passes, 299.9 MB/s
+        178 passes, 301.1 MB/s
+        176 passes, 299.1 MB/s
+
+AVERAGE: 296.8 MB/s
+
+TEST: OutputInputByteTableCodingLoop isParityCorrect
+    warm up...
+        177 passes, 299.3 MB/s
+        177 passes, 300.1 MB/s
+    testing...
+        151 passes, 255.6 MB/s
+        150 passes, 254.7 MB/s
+        152 passes, 257.2 MB/s
+        152 passes, 258.4 MB/s
+        152 passes, 257.0 MB/s
+        152 passes, 257.0 MB/s
+        152 passes, 257.5 MB/s
+        152 passes, 258.4 MB/s
+        152 passes, 257.5 MB/s
+        152 passes, 257.4 MB/s
+
+AVERAGE: 257.1 MB/s
+
+
+Outer,Middle,Inner,Multiply,Encode,Check
+Byte,Input,Output,Exp,127.11544198070997,240.66443856936206
+Byte,Input,Output,Table,145.46809779367922,240.38863976083712
+Byte,Output,Input,Exp,234.22561188375457,232.1727853152434
+Byte,Output,Input,Table,234.62285287528005,239.17895575926676
+Input,Byte,Output,Exp,134.28173497811378,240.1814646791964
+Input,Byte,Output,Table,152.02427136178252,240.2210714997013
+Input,Output,Byte,Exp,258.30508474576266,240.0139490858367
+Input,Output,Byte,Table,304.75857940941734,258.9460051803148
+Output,Byte,Input,Exp,254.48289618031316,236.46139294070792
+Output,Byte,Input,Table,232.53078111759135,229.29524188731835
+Output,Input,Byte,Exp,241.59856487941005,239.6296849335523
+Output,Input,Byte,Table,296.7581047381546,257.067384370016
+
+
+Summary:
+
+    ByteInputOutputExpCodingLoop encodeParity     127.1 MB/s
+    ByteInputOutputExpCodingLoop isParityCorrect  240.7 MB/s
+    ByteInputOutputTableCodingLoop encodeParity   145.5 MB/s
+    ByteInputOutputTableCodingLoop isParityCorrect 240.4 MB/s
+    ByteOutputInputExpCodingLoop encodeParity     234.2 MB/s
+    ByteOutputInputExpCodingLoop isParityCorrect  232.2 MB/s
+    ByteOutputInputTableCodingLoop encodeParity   234.6 MB/s
+    ByteOutputInputTableCodingLoop isParityCorrect 239.2 MB/s
+    InputByteOutputExpCodingLoop encodeParity     134.3 MB/s
+    InputByteOutputExpCodingLoop isParityCorrect  240.2 MB/s
+    InputByteOutputTableCodingLoop encodeParity   152.0 MB/s
+    InputByteOutputTableCodingLoop isParityCorrect 240.2 MB/s
+    InputOutputByteExpCodingLoop encodeParity     258.3 MB/s
+    InputOutputByteExpCodingLoop isParityCorrect  240.0 MB/s
+    InputOutputByteTableCodingLoop encodeParity   304.8 MB/s
+    InputOutputByteTableCodingLoop isParityCorrect 258.9 MB/s
+    OutputByteInputExpCodingLoop encodeParity     254.5 MB/s
+    OutputByteInputExpCodingLoop isParityCorrect  236.5 MB/s
+    OutputByteInputTableCodingLoop encodeParity   232.5 MB/s
+    OutputByteInputTableCodingLoop isParityCorrect 229.3 MB/s
+    OutputInputByteExpCodingLoop encodeParity     241.6 MB/s
+    OutputInputByteExpCodingLoop isParityCorrect  239.6 MB/s
+    OutputInputByteTableCodingLoop encodeParity   296.8 MB/s
+    OutputInputByteTableCodingLoop isParityCorrect 257.1 MB/s
+
+Process finished with exit code 0.

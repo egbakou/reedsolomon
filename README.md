@@ -2,7 +2,7 @@
 
 Reed-Solomon Erasure coding implementation in C#/.NET.
 
-This is a .NET Standard 2.0 port of the [JavaReedSolomon](https://github.com/Backblaze/JavaReedSolomon) library released by [Backblaze](http://backblaze.com/), without any additional optimizations.
+This is a .NET Standard 2.1 port of the [JavaReedSolomon](https://github.com/Backblaze/JavaReedSolomon) library released by [Backblaze](http://backblaze.com/), without any additional optimizations.
 
 ## What is Reed-Solomon?
 

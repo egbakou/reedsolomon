@@ -1,10 +1,10 @@
 # <img src="./assets/logo.png" alt="Icon" width="60" />ReedSolomon.NET 
-[![CI](https://github.com/egbakou/reedsolomon/actions/workflows/ci.yml/badge.svg)](https://github.com/egbakou/reedsolomon/actions/workflows/ci.yml) [![NuGet](https://img.shields.io/nuget/v/ReedSolomon.NET.svg?label=NuGet)](https://www.nuget.org/packages/ReedSolomon.NET/)
+[![CI](https://github.com/egbakou/reedsolomon/actions/workflows/ci.yml/badge.svg)](https://github.com/egbakou/reedsolomon/actions/workflows/ci.yml) [![NuGet](https://img.shields.io/nuget/v/ReedSolomon.NET.svg?label=NuGet)](https://www.nuget.org/packages/ReedSolomon.NET/) [![GitHub license](https://img.shields.io/github/license/egbakou/reedsolomon)](https://github.com/egbakou/reedsolomon/blob/main/LICENSE)
 
 
 Reed-Solomon Erasure coding implementation in C#/.NET.
 
-This is a .NET Standard 2.1 port of the [JavaReedSolomon](https://github.com/Backblaze/JavaReedSolomon) library released by [Backblaze](http://backblaze.com/), without any additional optimizations.
+This is a .NET Standard 2.1 port of the [JavaReedSolomon](https://github.com/Backblaze/JavaReedSolomon) library released by [Backblaze](http://backblaze.com/), without additional optimizations.
 
 ## What is Reed-Solomon?
 
@@ -18,7 +18,7 @@ I did some research about the mechanism that `minio` and  `Azure Blob storage` u
 
 So I decided to use the Reed-Solomon Erasure Coding. There are already the Java, Go, and Python implementations of the Algorithm.
 
-I followed the [Java](https://github.com/Backblaze/JavaReedSolomon) implementation released by [Backblaze](http://backblaze.com/).
+I followed the [Java implementation ](https://github.com/Backblaze/JavaReedSolomon) released by [Backblaze](http://backblaze.com/).
 
 ## Installation
 
@@ -38,7 +38,7 @@ dotnet add package ReedSolomon.NET
 
  Take a look at the `ReedSolomon.NET.Sample` project in the `src` folder. 
 
-You will find these three files: `SampleEncoder`, `SampleDecoder,` and `RemoteDecoder`. They show, in a very simple way, how to break a file into shards and encode parity, and then how to take a subset of the shards and reconstruct the original file.
+You will find these three files: `SampleEncoder`, `SampleDecoder,` and `RemoteDecoder`. They show, in a very simple way, how to break a file into data chunks and parity chunks, and then how to take a subset of the shards and reconstruct the original file.
 
 - `SampleEncoder.cs`
 
@@ -48,7 +48,7 @@ Break a file into data chunks and parity chunks.
 
 - `SampleDecoder.cs`
 
-Reconstruct the original file from Data chunks and/or Parity chunks.
+Reconstruct the original file from data chunks and/or parity chunks.
 
 In the illustration below, at least 4 "data chunks + Parity chunks" must be available, otherwise, the reconstruction will not be possible.
 
@@ -118,6 +118,8 @@ For security reasons, you can also encrypt each shard.
 - [klauspost/reedsolomon: Reed-Solomon Erasure Coding in Go (github.com)](https://github.com/klauspost/reedsolomon)
 - [SDC 2018 - Accelerated Erasure Coding: The New Frontier of Software Defined Storage - YouTube](https://www.youtube.com/watch?v=4QFb2Zvr6yc)
 
+- https://github.com/bwbeach)
+
 ## License
 
-This code, as the original [JavaReedSolomon](https://github.com/Backblaze/JavaReedSolomon) is published under an MIT license. See LICENSE file for more information.
+This project is licensed under the terms of the MIT license.

@@ -14,7 +14,7 @@ public static class SampleEncoder
     public static void Main(string[] args)
     {
         const string filePath = "filePath/data.extension";
-        Console.WriteLine("Byte array max");
+
         // get file size
         var fileSize = new FileInfo(filePath).Length;
         Console.WriteLine("File size: {0}", fileSize);
@@ -28,7 +28,7 @@ public static class SampleEncoder
 
         // Create a buffer holding the file size, followed by
         // the contents of the file.
-        // The maximum index in any single dimension is 2,147,483,591 (0x7FFFFFC7) for byte arrays ~=1GB
+        // The maximum index in any single dimension is 2,147,483,591 (0x7FFFFFC7) for byte arrays
         var buffer = new byte[shardSize * TotalShards];
         using var file = new FileStream(filePath, FileMode.Open, FileAccess.Read);
         var fileSizeBytes = BitConverter.GetBytes(fileSize);
@@ -59,7 +59,7 @@ public static class SampleEncoder
         Console.WriteLine("End time: " + DateTime.Now);
 
 
-        // // Write out the resulting files.
+        // Write out the resulting files.
         for (var i = 0; i < TotalShards; i++)
         {
             var outputFile = $"{filePath}.{i}";

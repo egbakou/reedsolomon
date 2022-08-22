@@ -12,7 +12,7 @@ Here is a well-explained article about the topic by [Backblaze](http://backblaze
 
 ## Motivation
 
-I had an object storage project at school this year. I didn't want to use Azure Blob Storage or Amazon S3 because my Azure Student Credits and AWS credits were finished. I found `minio`, `nextcloud`, `seaweedsfs`, and many other open-source projects for object storage, but I wanted to create something from scratch myself.
+I had an object storage project at school this year. I didn't want to use Azure Blob Storage or Amazon S3 because my Azure Student Credits and AWS credits were finished. I found `minio`, `nextcloud`, `seaweedfs`, and many other open-source projects for object storage, but I wanted to create something from scratch myself.
 
 I did some research about the mechanism that `minio` and  `Azure Blob storage` used. I noticed that `minio` uses the Reed-Solomon Erasure Coding. For Azure Azure Blob Storage, Microsoft uses Erasure Coding but I don't really know if the implementation is Reed-Solomon. 
 

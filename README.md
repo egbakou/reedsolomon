@@ -83,13 +83,9 @@ When I was working on my project, the maximum size of any file was 1GB, so I did
 
 If you want to improve this project, check out the [NativeMemoryArray repo](https://github.com/Cysharp/NativeMemoryArray) to remove this limitation and feel free to make a PR.
 
-- No performance optimization.
-
-See the [Go implementation](https://github.com/klauspost/reedsolomon) to improve the performance of this project.
+- See the [Go implementation](https://github.com/klauspost/reedsolomon) to improve the performance of this project.
 
 - You must run the benchmark on your hardware to detect the best inner loop to use.
-
-See again the [Go implementation](https://github.com/klauspost/reedsolomon) and feel free to make a PR.
 
 ## Shortcomings
 

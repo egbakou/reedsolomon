@@ -7,6 +7,7 @@ Reed-Solomon Erasure coding implementation in C#/.NET.
 This is a .NET Standard 2.1 port of the [JavaReedSolomon](https://github.com/Backblaze/JavaReedSolomon) library released by [Backblaze](http://backblaze.com/), without additional optimizations.
 
 ## What is Reed-Solomon?
+Reed-Solomon Erasure Coding is a method of data protection that uses a specific type of error-correcting code. It is designed to provide protection against data loss in case of failures or errors. It works by dividing data into smaller blocks and then encoding each block with extra information. This extra information allows the system to reconstruct the original data even if some of the blocks are lost or corrupted. Reed-Solomon Erasure Coding is commonly used in object storage systems, distributed file systems, and other types of storage systems where data durability and reliability are important.
 
 Here is a well-explained article about the topic by [Backblaze](http://backblaze.com/) : https://www.backblaze.com/blog/reed-solomon/
 

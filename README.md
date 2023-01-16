@@ -12,11 +12,7 @@ Here is a well-explained article about the topic by [Backblaze](http://backblaze
 
 ## Motivation
 
-I had an object storage project at school this year. I didn't want to use Azure Blob Storage or Amazon S3 because my Azure Student Credits and AWS credits were finished. I found `minio`, `nextcloud`, `seaweedfs`, and many other open-source projects for object storage, but I wanted to create something from scratch myself.
-
-I did some research about the mechanism that `minio` and  `Azure Blob storage` used. I noticed that `minio` uses the Reed-Solomon Erasure Coding. For Azure Azure Blob Storage, Microsoft uses Erasure Coding but I don't really know if the implementation is Reed-Solomon. 
-
-So I decided to use the Reed-Solomon Erasure Coding. There are already the Java, Go, and Python implementations of the Algorithm.
+During the school year, I embarked on a project to create an object storage system. I chose not to utilize Azure Blob Storage or Amazon S3 as I had exhausted my student credits. I researched various open-source alternatives such as minio, nextcloud, and seaweedfs, but ultimately decided to develop my own S3 compatible storage system from scratch. I deployed four virtual machines, each with two disks. However, the virtual machines were in an unstable environment and I aimed to avoid data replication across them. Through my research, I discovered that minio utilizes the Reed-Solomon Erasure Coding method. Azure Blob Storage also uses Erasure Coding, but I am not sure if they use the Reed-Solomon version. This is how the project came to realization.
 
 I followed the [Java implementation ](https://github.com/Backblaze/JavaReedSolomon) released by [Backblaze](http://backblaze.com/).
 

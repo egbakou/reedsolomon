@@ -16,11 +16,11 @@ public class ReedSolomonTests
         {
             var codec = new ReedSolomon(5, 5, codingLoop);
             var shards = new byte[10][];
-            shards[0] = new byte[] {0, 1};
-            shards[1] = new byte[] {4, 5};
-            shards[2] = new byte[] {2, 3};
-            shards[3] = new byte[] {6, 7};
-            shards[4] = new byte[] {8, 9};
+            shards[0] = [0, 1];
+            shards[1] = [4, 5];
+            shards[2] = [2, 3];
+            shards[3] = [6, 7];
+            shards[4] = [8, 9];
             shards[5] = new byte[2];
             shards[6] = new byte[2];
             shards[7] = new byte[2];
@@ -29,11 +29,11 @@ public class ReedSolomonTests
 
             codec.EncodeParity(shards, 0, 2);
 
-            shards[5].ShouldBe(new byte[] {12, 13});
-            shards[6].ShouldBe(new byte[] {10, 11});
-            shards[7].ShouldBe(new byte[] {14, 15});
-            shards[8].ShouldBe(new byte[] {90, 91});
-            shards[9].ShouldBe(new byte[] {94, 95});
+            shards[5].ShouldBe([12, 13]);
+            shards[6].ShouldBe([10, 11]);
+            shards[7].ShouldBe([14, 15]);
+            shards[8].ShouldBe([90, 91]);
+            shards[9].ShouldBe([94, 95]);
 
             codec.IsParityCorrect(shards, 0, 2).ShouldBeTrue();
             shards[8][0] += 1;
@@ -76,7 +76,7 @@ public class ReedSolomonTests
     }
 
     /**
-     * Encodes a set of data shards, and then tries decoding
+     * Encodes a set of data shards and then tries decoding
      * using all possible subsets of the encoded shards.
      *
      * Uses 5+5 coding, so there must be 5 input data shards.
@@ -258,13 +258,13 @@ public class ReedSolomonTests
         var result = new List<int[]>();
         if (n == 0)
         {
-            result.Add(Array.Empty<int>());
+            result.Add([]);
         }
         else
         {
             for (var i = min; i < max - n; i++)
             {
-                int[] prefix = {i};
+                int[] prefix = [i];
                 result.AddRange(AllSubsets(n - 1, i + 1, max)
                     .Select(suffix => AppendIntArrays(prefix, suffix)));
             }

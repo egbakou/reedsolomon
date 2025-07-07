@@ -17,17 +17,15 @@ public class MatrixTests
     [Fact]
     public void Multiply_Two_Matrices_Should_Return_The_Right_Matrix()
     {
-        var m1 = new Matrix(new[]
-        {
-            new byte []{ 1, 2 },
-            new byte []{ 3, 4 }
-        });
+        var m1 = new Matrix([
+            [1, 2],
+            [3, 4]
+        ]);
 
-        var m2 = new Matrix(new[]
-        {
-            new byte []{ 5, 6 },
-            new byte []{ 7, 8 }
-        });
+        var m2 = new Matrix([
+            [5, 6],
+            [7, 8]
+        ]);
         var result = m1.Multiply(m2);
         result.ToString().ShouldBe("[11, 22]\n[19, 42]\n");
     }
@@ -35,13 +33,11 @@ public class MatrixTests
     [Fact]
     public void Inverse_Matrix_Should_Return_The_Right_Matrix()
     {
-        Matrix m = new (
-            new[]
-            {
-                new byte [] { 56, 23, 98 },
-                new byte [] { 3, 100, 200 },
-                new byte [] { 45, 201, 123 }
-            });
+        Matrix m = new ([
+            [56, 23, 98],
+            [3, 100, 200],
+            [45, 201, 123]
+        ]);
         m.Invert().ToString().ShouldBe("[175, 133, 33]\n[130, 13, 245]\n[112, 35, 126]\n");
         Matrix.Identity(3).ShouldBe(m.Multiply(m.Invert()));
     }

@@ -12,7 +12,7 @@ public class GaloisTests
         // Unlike the Python implementation, there is no need to test
         // for closure.  Because add(), subtract(), multiply(), and
         // divide() all return bytes, there's no way they could
-        // possible return something outside the field.
+        // possibly return something outside the field.
     }
 
     [Fact]

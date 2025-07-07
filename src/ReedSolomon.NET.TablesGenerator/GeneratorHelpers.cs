@@ -12,7 +12,8 @@ public static class Helpers
     /// </summary>
     private const int GeneratingPolynomial = 29;
 
-    private static readonly short[] _logTable = {
+    private static readonly short[] _logTable =
+    [
         -1, 0, 1, 25, 2, 50, 26, 198,
         3, 223, 51, 238, 27, 104, 199, 75,
         4, 100, 224, 14, 52, 141, 239, 129,
@@ -44,8 +45,8 @@ public static class Helpers
         203, 89, 95, 176, 156, 169, 160, 81,
         11, 245, 22, 235, 122, 117, 44, 215,
         79, 174, 213, 233, 230, 231, 173, 232,
-        116, 214, 244, 234, 168, 80, 88, 175,
-    };
+        116, 214, 244, 234, 168, 80, 88, 175
+    ];
 
 
     /// <summary>

@@ -11,7 +11,7 @@
     <Description>Reed-Solomon Erasure Coding in C#/.NET</Description>
     <PackageProjectUrl>https://github.com/egbakou/reedsolomon</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <licenses>MIT</licenses>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/egbakou/reedsolomon</RepositoryUrl>
     <PackageReleaseNotes>See: https://github.com/egbakou/reedsolomon </PackageReleaseNotes>
     <Copyright>Copyright 2022</Copyright>

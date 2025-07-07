@@ -20,6 +20,7 @@ public static class SampleDecoder
         // var shardsList = Directory.GetFiles(@"path_to_directory/", "data.bin.*");
         // Exclude the file that name end by .bin
         var shardsList = Directory.GetFiles(@"path_to_directory/", "data.extension.*")
+            .OrderBy(file => int.Parse(file.Split('.').Last()))
             .Where(file => !file.EndsWith(".extension")).ToList();
         var shardsCount = shardsList.Count;
         var shardPresent = new bool[TotalShards];
